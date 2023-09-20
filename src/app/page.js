@@ -1,0 +1,41 @@
+// import Hero from "@/components/hero";
+import HeroSection from "@/components/HeroSection";
+import Navbar from "@/components/Navbar";
+import TwoSidedGrid from "@/components/TwoSidedGrid";
+
+export default function Home() {
+  return (
+    <>
+      <Navbar />
+      <HeroSection />
+      <TwoSidedGrid
+        image="/laptop.jpg"
+        imageSide="left"
+        heading="Streamlined Learning Tools"
+        subline="Access extensive, ready-use content generators for lesson plans, group activities, exams, aligning with core curriculum standards."
+        cta1="Get Started"
+        cta2="Learn More"
+      />
+      <TwoSidedGrid
+        image="/ai-robot.jpg"
+        imageSide="right"
+        heading="Intelligent Assistance"
+        subline="
+        Minimize mental effort utilizing AI; seamlessly leverage instant curated knowledge from countless sources."
+        cta1="Get Started"
+        cta2="Learn More"
+      />
+    </>
+  );
+}
+
+{
+  /* <Image
+              src="/vercel.svg"
+              alt="Vercel Logo"
+              className={styles.vercelLogo}
+              width={100}
+              height={24}
+              priority
+            /> */
+}
