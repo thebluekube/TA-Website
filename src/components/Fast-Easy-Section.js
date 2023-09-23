@@ -24,8 +24,8 @@ const FastEasySection = () => {
       width={"100%"}
       gap={6}
     >
-      <Flex direction={"row"}>
-        <Box width={"300px"} height={"240px"} alignItems={"center"}>
+      <Flex direction={"row"} gap={7}>
+        <Box alignItems={"center"}>
           <Image borderRadius={"20px"} src="./fast.jpg" />
         </Box>
         <Box width={"190px"}>
@@ -38,8 +38,8 @@ const FastEasySection = () => {
           <ReadMore color="rgb(255, 212, 0)" bg="rgb(34, 34, 34)" />
         </Box>
       </Flex>
-      <Flex direction={"row"}>
-        <Box width={"300px"} height={"240px"} alignItems={"center"}>
+      <Flex direction={"row"} gap={7}>
+        <Box alignItems={"center"}>
           <Image borderRadius={"20px"} src="./easy.jpg" />
         </Box>
         <Box width={"190px"}>
