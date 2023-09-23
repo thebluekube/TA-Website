@@ -1,4 +1,12 @@
-import { Container, Flex, Box, Text, Heading, Button } from "@chakra-ui/react";
+import {
+  Container,
+  Flex,
+  Box,
+  Text,
+  Heading,
+  Button,
+  Image,
+} from "@chakra-ui/react";
 import React from "react";
 import ReadMore from "./buttons/ReadMore";
 
@@ -7,15 +15,17 @@ const FastEasySection = () => {
     width: "190px",
   };
   return (
-    <Container width="400px" p={5} height="80vh" display={"flex"}>
+    <Container p={5} height="80vh" display={"flex"}>
       <Flex
         direction={"column"}
         justifyContent={"space-evenly"}
         alignItems={"center"}
         margin={"20px"}
       >
-        <Flex direction={"row"}>
-          <Box></Box>
+        <Flex direction={"row"} gap={6}>
+          <Box width={"320px"} height={"240px"} alignItems={"center"}>
+            <Image borderRadius={"20px"} src="./fast.jpg" />
+          </Box>
           <Box {...boxStyles}>
             <Heading mb={3} color="#333">
               Fast
@@ -26,8 +36,10 @@ const FastEasySection = () => {
             <ReadMore color="rgb(255, 212, 0)" bg="rgb(34, 34, 34)" />
           </Box>
         </Flex>
-        <Flex direction={"row"}>
-          <Box></Box>
+        <Flex direction={"row"} gap={6}>
+          <Box width={"320px"} height={"240px"} alignItems={"center"}>
+            <Image borderRadius={"20px"} src="./easy.jpg" />
+          </Box>
           <Box {...boxStyles}>
             <Heading mb={3} color="#333">
               Easy
