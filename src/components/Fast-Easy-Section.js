@@ -7,13 +7,7 @@ const FastEasySection = () => {
     width: "190px",
   };
   return (
-    <Container
-      width="400px"
-      p={5}
-      height="80vh"
-      display={"flex"}
-      border={"1px solid"}
-    >
+    <Container width="400px" p={5} height="80vh" display={"flex"}>
       <Flex
         direction={"column"}
         justifyContent={"space-evenly"}
