@@ -12,7 +12,6 @@ const FastEasySection = () => {
         direction={"column"}
         justifyContent={"space-evenly"}
         alignItems={"center"}
-        width={"80%"}
         margin={"20px"}
       >
         <Flex direction={"row"}>
