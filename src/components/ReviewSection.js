@@ -8,7 +8,6 @@ const Review = () => {
       alignItems={"center"}
       justifyContent={"center"}
       height={"80vh"}
-      border={"1px solid"}
     >
       <Box width={"600px"}>
         <Flex direction={"column"}>
