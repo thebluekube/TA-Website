@@ -7,15 +7,25 @@ const Review = () => {
       display={"flex"}
       flexDir={"column"}
       alignItems={"center"}
-      height={"60vh"}
+      height={{ base: "80vh", sm: "60vh" }}
       bg={"white"}
       p={10}
     >
-      <Flex direction={"column"} width={"600px"}>
-        <Heading fontSize={"50px"} alignSelf={"center"} mb={8} color="#001122">
+      <Flex direction={"column"} width={{ base: "320px", sm: "600px" }}>
+        <Heading
+          fontSize={{ base: "32px", sm: "50px" }}
+          alignSelf={"center"}
+          mb={12}
+          color="#001122"
+        >
           Reviews
         </Heading>
-        <Text fontSize={"24px"} textAlign={"center"} color={"#888"} mb={5}>
+        <Text
+          fontSize={{ base: "18px", sm: "24px" }}
+          textAlign={"center"}
+          color={"#888"}
+          mb={5}
+        >
           “Thank you for creating such a transformative solution, particularly
           for educators! My classroom got transformed from conventional to Teach
           Assist driven in less than a week.”
@@ -29,11 +39,15 @@ const Review = () => {
               src="./Adeola.jpg"
             />
           </Box>
-          <Box>
-            <Text fontSize={"20px"} color={"#001122"}>
+          <Box display={"flex"} flexDir={"column"}>
+            <Text fontSize={{ base: "16px", sm: "20px" }} color={"#001122"}>
               Adeola Gunn
             </Text>
-            <Text fontSize={"14px"} color={"#666666"}>
+            <Text
+              textAlign={"left"}
+              fontSize={{ base: "10px", sm: "14px" }}
+              color={"#666666"}
+            >
               @Deola
             </Text>
           </Box>
