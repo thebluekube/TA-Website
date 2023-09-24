@@ -11,11 +11,9 @@ import React from "react";
 import ReadMore from "./buttons/ReadMore";
 
 const FastEasySection = () => {
-  const boxStyles = {
-    width: "190px",
-  };
   return (
     <Box
+      h={{ base: "80vh", md: "90vh" }}
       p={6}
       display={"flex"}
       flexDirection={"column"}
@@ -24,7 +22,7 @@ const FastEasySection = () => {
       width={"100%"}
       gap={6}
     >
-      <Flex direction={"row"} gap={7}>
+      <Flex direction={"row"} gap={7} alignItems={"center"}>
         <Box alignItems={"center"}>
           <Image borderRadius={"20px"} src="./fast.jpg" />
         </Box>
@@ -32,13 +30,13 @@ const FastEasySection = () => {
           <Heading mb={3} color="#333">
             Fast
           </Heading>
-          <Text fontSize="lg" color={"#888"} mb={5}>
+          <Text fontSize={{ base: "14px", sm: "lg" }} color={"#888"} mb={5}>
             You've never made a class related content this fast before.
           </Text>
           <ReadMore color="rgb(255, 212, 0)" bg="rgb(34, 34, 34)" />
         </Box>
       </Flex>
-      <Flex direction={"row"} gap={7}>
+      <Flex direction={"row"} gap={7} alignItems={"center"}>
         <Box alignItems={"center"}>
           <Image borderRadius={"20px"} src="./easy.jpg" />
         </Box>
@@ -46,7 +44,7 @@ const FastEasySection = () => {
           <Heading mb={3} color="#333">
             Easy
           </Heading>
-          <Text fontSize="lg" color={"#888"} mb={5}>
+          <Text fontSize={{ base: "14px", sm: "lg" }} color={"#888"} mb={5}>
             Works with standards and styles you're familiar with.
           </Text>
           <ReadMore color="rgb(255, 212, 0)" bg="rgb(34, 34, 34)" />
