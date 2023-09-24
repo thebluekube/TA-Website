@@ -50,7 +50,7 @@ const ContactForm = () => {
           />
         </FormControl>
         <Button
-          mt={4}
+          mt={2}
           width={"100%"}
           color="rgb(255, 212, 0)"
           bg="rgb(34, 34, 34)"
