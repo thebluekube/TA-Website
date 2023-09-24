@@ -21,9 +21,15 @@ const SignUpToday = () => {
           Sign up today.
         </Heading>
         <Flex gap={4}>
-          <LearnMore height="40px" bg="rgb(235, 235, 235)" color="black" />
+          <LearnMore
+            height="40px"
+            width="120px"
+            bg="rgb(235, 235, 235)"
+            color="black"
+          />
           <GetStarted
             height="40px"
+            width="120px"
             color="rgb(255, 212, 0)"
             bg="rgb(34, 34, 34)"
           />
