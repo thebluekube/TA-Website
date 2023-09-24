@@ -1,4 +1,5 @@
 // import Hero from "@/components/hero";
+import Contact from "@/components/Contact";
 import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
 import TwoSidedGrid from "@/components/TwoSidedGrid";
@@ -25,6 +26,7 @@ export default function Home() {
         cta1="Get Started"
         cta2="Learn More"
       />
+      <Contact />
     </>
   );
 }
