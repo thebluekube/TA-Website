@@ -17,7 +17,7 @@ const SignUpToday = () => {
         alignItems={"center"}
         justifyContent={"center"}
       >
-        <Heading fontSize={"50px"} mb={5}>
+        <Heading fontSize={{ base: "32px", sm: "50px" }} mb={5}>
           Sign up today.
         </Heading>
         <Flex gap={4}>
