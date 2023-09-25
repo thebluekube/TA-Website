@@ -2,6 +2,7 @@
 import FastEasySection from "@/components/Fast-Easy-Section";
 import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
+import SignUpToday from "@/components/SignUpToday";
 import Review from "@/components/ReviewSection";
 import TwoSidedGrid from "@/components/TwoSidedGrid";
 
@@ -27,6 +28,7 @@ export default function Home() {
         cta1="Get Started"
         cta2="Learn More"
       />
+      <SignUpToday />
       <Review />
       <FastEasySection />
     </>
