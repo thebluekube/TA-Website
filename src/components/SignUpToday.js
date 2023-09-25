@@ -7,29 +7,32 @@ const SignUpToday = () => {
   return (
     <Box
       bg={"white"}
-      h={{ base: "50vh", sm: "20vh" }}
+      display={"flex"}
       alignItems={"center"}
       width={"100%"}
-      p={5}
+      p={"100px 40px"}
     >
       <Flex
         direction={"column"}
         alignItems={"center"}
-        justifyContent={"center"}
+        gap={"30px"}
+        width={"100%"}
       >
-        <Heading color="#333" fontSize={{ base: "32px", sm: "50px" }} mb={5}>
+        <Heading color="#333" fontSize={{ base: "32px", sm: "50px" }}>
           Sign up today.
         </Heading>
-        <Flex gap={4}>
+        <Flex gap={"20px"}>
           <LearnMore
+            lineHeight="1.2em"
+            fontSize="14px"
             height="40px"
-            width="120px"
             bg="rgb(235, 235, 235)"
             color="black"
           />
           <GetStarted
+            lineHeight="1.2em"
+            fontSize="14px"
             height="40px"
-            width="120px"
             color="rgb(255, 212, 0)"
             bg="rgb(34, 34, 34)"
           />
