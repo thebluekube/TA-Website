@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar";
 import SignUpToday from "@/components/SignUpToday";
 import Review from "@/components/ReviewSection";
 import TwoSidedGrid from "@/components/TwoSidedGrid";
+import { Market } from "@/components/Marketing-Section";
 
 export default function Home() {
   return (
@@ -31,6 +32,7 @@ export default function Home() {
       />
       <FastEasySection />
       <Review />
+      <Market />
       <Contact />
       <SignUpToday />
     </>
