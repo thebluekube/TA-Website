@@ -1,4 +1,5 @@
 // import Hero from "@/components/hero";
+import FastEasySection from "@/components/Fast-Easy-Section";
 import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
 import Review from "@/components/ReviewSection";
@@ -27,6 +28,7 @@ export default function Home() {
         cta2="Learn More"
       />
       <Review />
+      <FastEasySection />
     </>
   );
 }
