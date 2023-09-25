@@ -61,7 +61,7 @@ const FastEasySection = () => {
             Fast
           </Heading>
           <Text
-            width={{ base: "150px", sm: "280px" }}
+            width={{ base: "100%", sm: "280px" }}
             fontSize={{ base: "14px", sm: "24px" }}
             fontWeight={"medium"}
             color={"#888888"}
@@ -120,7 +120,7 @@ const FastEasySection = () => {
             Easy
           </Heading>
           <Text
-            width={{ base: "150px", sm: "280px" }}
+            width={{ base: "100%", sm: "280px" }}
             fontSize={{ base: "14px", sm: "24px" }}
             fontWeight={"medium"}
             color={"#888888"}

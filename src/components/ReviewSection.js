@@ -25,7 +25,7 @@ const Review = () => {
         alignItems={"center"}
         gap={"40px"}
       >
-        <Box width={"500px"}>
+        <Box width={{ base: "100%", sm: "500px" }}>
           <Text
             fontSize={{ base: "18px", sm: "24px" }}
             textAlign={"center"}
