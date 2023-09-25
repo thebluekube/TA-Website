@@ -14,7 +14,7 @@ const FastEasySection = () => {
   return (
     <Box
       h={{ base: "80vh", md: "90vh" }}
-      p={6}
+      p={"100px 0"}
       display={"flex"}
       flexDirection={"column"}
       alignItems={"center"}
@@ -22,9 +22,14 @@ const FastEasySection = () => {
       width={"100%"}
       gap={6}
     >
-      <Flex direction={"row"} gap={7} alignItems={"center"}>
+      <Flex direction={"row"} gap={7} alignItems={"center"} padding="40px">
         <Box alignItems={"center"}>
-          <Image borderRadius={"20px"} src="./fast.jpg" />
+          <Image
+            width="320px"
+            height="240px"
+            borderRadius={"20px"}
+            src="./fast.jpg"
+          />
         </Box>
         <Box width={"190px"}>
           <Heading mb={3} color="#333">
@@ -38,7 +43,12 @@ const FastEasySection = () => {
       </Flex>
       <Flex direction={"row"} gap={7} alignItems={"center"}>
         <Box alignItems={"center"}>
-          <Image borderRadius={"20px"} src="./easy.jpg" />
+          <Image
+            borderRadius={"20px"}
+            width="320px"
+            height="240px"
+            src="./easy.jpg"
+          />
         </Box>
         <Box width={"190px"}>
           <Heading mb={3} color="#333">

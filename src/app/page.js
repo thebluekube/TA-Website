@@ -14,7 +14,7 @@ export default function Home() {
       <HeroSection />
       <TwoSidedGrid
         image="/laptop.jpg"
-        imageSide="left"
+        imageSide="right"
         heading="Streamlined Learning Tools"
         subline="Access extensive, ready-use content generators for lesson plans, group activities, exams, aligning with core curriculum standards."
         cta1="Get Started"
@@ -22,19 +22,17 @@ export default function Home() {
       />
       <TwoSidedGrid
         image="/ai-robot.jpg"
-        imageSide="right"
+        imageSide="left"
         heading="Intelligent Assistance"
         subline="
         Minimize mental effort utilizing AI; seamlessly leverage instant curated knowledge from countless sources."
         cta1="Get Started"
         cta2="Learn More"
       />
-      <Review />
       <FastEasySection />
+      <Review />
       <Contact />
       <SignUpToday />
-
-
     </>
   );
 }
