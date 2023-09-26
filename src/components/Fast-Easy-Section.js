@@ -13,7 +13,7 @@ import ReadMore from "./buttons/ReadMore";
 const FastEasySection = () => {
   return (
     <Box
-      h={{ base: "80vh", md: "90vh" }}
+      h={"min-content"}
       p={"100px 0"}
       display={"flex"}
       flexDirection={"column"}
@@ -22,8 +22,16 @@ const FastEasySection = () => {
       width={"100%"}
       gap={6}
     >
-      <Flex direction={"row"} gap={7} alignItems={"center"} padding="40px">
-        <Box alignItems={"center"}>
+      <Flex
+        direction={{ base: "column", sm: "row" }}
+        p={"40px"}
+        gap={"40px"}
+        alignItems={"center"}
+        justifyContent={"center"}
+        width={"100%"}
+        h={"auto"}
+      >
+        <Box>
           <Image
             width="320px"
             height="240px"
@@ -31,18 +39,58 @@ const FastEasySection = () => {
             src="./fast.jpg"
           />
         </Box>
-        <Box width={"190px"}>
-          <Heading mb={3} color="#333">
+        <Box
+          width={"320px"}
+          display={"flex"}
+          flexDir={"column"}
+          justifyContent={"center"}
+          alignItems={"flex-start"}
+          alignSelf={"stretch"}
+          alignContent={"flex-start"}
+          h={"auto"}
+          gap={"20px"}
+        >
+          <Heading
+            fontSize={{ base: "32px", sm: "50px" }}
+            color="#001122"
+            letterSpacing={"-2.1px"}
+            lineHeight={"1.2em"}
+            textAlign={"left"}
+            overflow={"visible"}
+          >
             Fast
           </Heading>
-          <Text fontSize={{ base: "14px", sm: "lg" }} color={"#888"} mb={5}>
+          <Text
+            width={{ base: "100%", sm: "280px" }}
+            fontSize={{ base: "14px", sm: "24px" }}
+            fontWeight={"medium"}
+            color={"#888888"}
+            letterSpacing={"-0.5px"}
+            lineHeight={"1.5em"}
+            textAlign={"left"}
+          >
             You've never made a class related content this fast before.
           </Text>
-          <ReadMore color="rgb(255, 212, 0)" bg="rgb(34, 34, 34)" />
+          <ReadMore
+            fontWeight="semibold"
+            fontSize="14px"
+            lineHeight="1.2em"
+            height="40px"
+            color="rgb(255, 212, 0)"
+            bg="rgb(34, 34, 34)"
+          />
         </Box>
       </Flex>
-      <Flex direction={"row"} gap={7} alignItems={"center"}>
-        <Box alignItems={"center"}>
+      <Flex
+        direction={{ base: "column", sm: "row" }}
+        p={"40px"}
+        gap={"40px"}
+        alignItems={"center"}
+        justifyContent={"center"}
+        width={"100%"}
+        h={"auto"}
+      >
+        <Box>
           <Image
             borderRadius={"20px"}
             width="320px"
@@ -50,14 +98,46 @@ const FastEasySection = () => {
             src="./easy.jpg"
           />
         </Box>
-        <Box width={"190px"}>
-          <Heading mb={3} color="#333">
+        <Box
+          width={"320px"}
+          display={"flex"}
+          flexDir={"column"}
+          justifyContent={"center"}
+          alignItems={"flex-start"}
+          alignSelf={"stretch"}
+          alignContent={"flex-start"}
+          h={"auto"}
+          gap={"20px"}
+        >
+          <Heading
+            fontSize={{ base: "32px", sm: "50px" }}
+            color="#001122"
+            letterSpacing={"-2.1px"}
+            lineHeight={"1.2em"}
+            textAlign={"left"}
+            overflow={"visible"}
+          >
             Easy
           </Heading>
-          <Text fontSize={{ base: "14px", sm: "lg" }} color={"#888"} mb={5}>
+          <Text
+            width={{ base: "100%", sm: "280px" }}
+            fontSize={{ base: "14px", sm: "24px" }}
+            fontWeight={"medium"}
+            color={"#888888"}
+            letterSpacing={"-0.5px"}
+            lineHeight={"1.5em"}
+            textAlign={"left"}
+          >
             Works with standards and styles you're familiar with.
           </Text>
-          <ReadMore color="rgb(255, 212, 0)" bg="rgb(34, 34, 34)" />
+          <ReadMore
+            fontWeight="semibold"
+            fontSize="14px"
+            lineHeight="1.2em"
+            height="40px"
+            color="rgb(255, 212, 0)"
+            bg="rgb(34, 34, 34)"
+          />
         </Box>
       </Flex>
     </Box>

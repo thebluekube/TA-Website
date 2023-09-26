@@ -43,39 +43,42 @@ const HeroSection = () => {
     <Flex
       flexDirection={"column"}
       bg="black"
-      h="80vh"
+      h="600px"
+      w={"100%"}
       justifyContent="center"
       alignItems="center"
       textAlign="center"
+      p={"60px"}
+      gap={"20px"}
     >
-      <Text
-        fontSize={isMobile ? "32px" : "50px"}
-        fontWeight={700}
-        color="#ffd400"
-      >
-        Supercharge Teaching with Teach Assist AI
-      </Text>
-      <Text
-        // fontSize={sublineFontSize}
-        fontSize={isMobile ? "18px" : "24px"}
-        lineHeight="1.5"
-        color="rgba(255, 255, 255, 0.6)"
-        maxWidth="634px"
-        mt="25px"
-        mx="auto"
-      >
-        Transition from effort to efficiency with Teach Assist AI, the digital
-        assistant accelerating workflows for teaching professionals.
-      </Text>
-      <Stack
-        direction={{ base: "column", md: "row" }}
-        spacing={4}
-        align="center"
-        marginTop="48px"
-      >
+      <Box w={{ base: "320px", sm: "100%" }}>
+        <Text
+          fontSize={isMobile ? "32px" : "50px"}
+          letterSpacing={"-2px"}
+          lineHeight={"1.2em"}
+          fontWeight={700}
+          color="#ffd400"
+        >
+          Supercharge Teaching with Teach Assist AI
+        </Text>
+      </Box>
+      <Box w={{ base: "320px", sm: "100%" }}>
+        <Text
+          fontSize={isMobile ? "14px" : "24px"}
+          lineHeight="1.5"
+          letterSpacing={"-0.5px"}
+          color="rgba(255, 255, 255, 0.6)"
+          maxWidth="634px"
+          mx="auto"
+        >
+          Transition from effort to efficiency with Teach Assist AI, the digital
+          assistant accelerating workflows for teaching professionals.
+        </Text>
+      </Box>
+      <Stack direction={"row"} spacing={4} align="center" marginTop="20px">
         {/* <Button {...buttonStyles}>Get Started</Button> */}
-        <GetStarted />
-        <LearnMore />
+        <GetStarted height="40px" fontSize="14px" />
+        <LearnMore height="40px" fontSize="14px" />
         {/* <Button
           colorScheme="white"
           size="lg"

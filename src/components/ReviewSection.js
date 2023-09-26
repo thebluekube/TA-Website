@@ -7,46 +7,61 @@ const Review = () => {
       display={"flex"}
       flexDir={"column"}
       alignItems={"center"}
-      height={{ base: "80vh", sm: "60vh" }}
       bg={"white"}
-      p={10}
+      p={"100px 40px "}
+      gap={"60px"}
     >
-      <Flex direction={"column"} width={{ base: "320px", sm: "600px" }}>
-        <Heading
-          fontSize={{ base: "32px", sm: "50px" }}
-          alignSelf={"center"}
-          mb={12}
-          color="#001122"
-        >
-          Reviews
-        </Heading>
-        <Text
-          fontSize={{ base: "18px", sm: "24px" }}
-          textAlign={"center"}
-          color={"#888"}
-          mb={5}
-        >
-          “Thank you for creating such a transformative solution, particularly
-          for educators! My classroom got transformed from conventional to Teach
-          Assist driven in less than a week.”
-        </Text>
-        <Flex alignSelf={"center"} direction={"row"} gap={"10px"}>
-          <Box alignSelf={"center"}>
+      <Heading
+        fontSize={{ base: "32px", sm: "50px" }}
+        color="#001122"
+        letterSpacing={"-2.1px"}
+        lineHeight={"1.2em"}
+      >
+        Reviews
+      </Heading>
+      <Flex
+        direction={"column"}
+        maxW={"100%"}
+        alignItems={"center"}
+        gap={"40px"}
+      >
+        <Box width={{ base: "100%", sm: "500px" }}>
+          <Text
+            fontSize={{ base: "18px", sm: "24px" }}
+            textAlign={"center"}
+            color={"#888"}
+            letterSpacing={"-0.7px"}
+            lineHeight={"1.5em"}
+          >
+            “Thank you for creating such a transformative solution, particularly
+            for educators! My classroom got transformed from conventional to
+            Teach Assist driven in less than a week.”
+          </Text>
+        </Box>
+        <Flex direction={"row"} gap={"15px"}>
+          <Box>
             <Image
               width={"50px"}
               height={"50px"}
-              borderRadius={"50px"}
+              borderRadius={"50%"}
               src="./Adeola.jpg"
             />
           </Box>
           <Box display={"flex"} flexDir={"column"}>
-            <Text fontSize={{ base: "16px", sm: "20px" }} color={"#001122"}>
+            <Text
+              fontSize={{ base: "16px", sm: "20px" }}
+              letterSpacing={"-0.5px"}
+              lineHeight={"1.4em"}
+              color={"#001122"}
+              fontWeight={"semibold"}
+            >
               Adeola Gunn
             </Text>
             <Text
               textAlign={"left"}
               fontSize={{ base: "10px", sm: "14px" }}
               color={"#666666"}
+              lineHeight={"1.5em"}
             >
               @Deola
             </Text>
