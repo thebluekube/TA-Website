@@ -52,7 +52,7 @@ const TwoSidedGrid = ({
       <Box width={{ base: "320px", sm: "400px" }}>
   <VStack gap="10px"> 
     <Heading
-      fontSize={{ base: "32px", sm: "50px" }}
+      fontSize={{ base: "32px", md: "50px" }}
       color="#333333"
       letterSpacing="-2px"
       lineHeight="1.2em"
@@ -62,7 +62,7 @@ const TwoSidedGrid = ({
       {heading}
     </Heading>
     <Text
-      fontSize={{ base: "18px", sm: "24px" }}
+      fontSize={{ base: "18px", md: "24px" }}
       color="#888888"
       letterSpacing="-0.5px"
       lineHeight="1.5em"
