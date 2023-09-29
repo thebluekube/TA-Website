@@ -11,7 +11,7 @@ import React from "react";
 
 const inputStyles = {
   bg: "rgb(235, 235, 235)",
-  color: "#000", // Text color
+  color: "#000",
   fontSize: "16px",
 };
 

@@ -1,8 +1,7 @@
 "use client";
 import {
   Box,
-  Button,
-  SimpleGrid,
+ VStack,
   HStack,
   Flex,
   Image as ChakraImage,
@@ -23,34 +22,14 @@ const TwoSidedGrid = ({
   cta2,
 }) => {
   const sideOrder = useBreakpointValue({ base: "none", sm: imageSide });
-  const imageStyles = {
-    flexShrink: 0,
-    flex: "1 0 0px",
-    height: "600px",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
-    overflow: "hidden",
-    position: "relative",
-    padding: "0px",
-    alignContent: "center",
-    flexWrap: "nowrap",
-    gap: 20,
-    backgroundImage: `url('${image}')`, // Replace 'your_image_url' with actual image URL
-    backgroundSize: "cover",
-    backgroundRepeat: "no-repeat",
-    backgroundPosition: "center",
-    borderRadius: "0px",
-  };
+
 
   return (
     <Flex
-      //   columns={{ base: 1, sm: 2 }}
-      direction={
-        sideOrder === "right" || imageSide == "right" ? "row-reverse" : "row"
-      }
-      height="60vh"
+      direction={{
+        base:"column",sm:sideOrder === "right" || imageSide == "right" ? "row-reverse" : "row"
+      }}
+      height="600px"
       bg="white"
       justifyContent={"space-evenly"}
     >
@@ -68,19 +47,37 @@ const TwoSidedGrid = ({
         flexDirection="column"
         justifyContent="center"
         alignItems={"center"}
+
       >
-        <Box width="400px" p={5}>
-          <Heading mb={3} color="#333">
-            {heading}
-          </Heading>
-          <Text fontSize="lg" color={"#888"} mb={5}>
-            {subline}
-          </Text>
-          <HStack>
-            <GetStarted color="rgb(255, 212, 0)" bg="rgb(34, 34, 34)" />
-            <LearnMore bg="rgb(235, 235, 235)" color="black" />
-          </HStack>
-        </Box>
+      <Box width={{ base: "320px", sm: "400px" }}>
+  <VStack gap="10px"> 
+    <Heading
+      fontSize={{ base: "32px", md: "50px" }}
+      color="#333333"
+      letterSpacing="-2px"
+      lineHeight="1.2em"
+      fontWeight="bold"
+      alignSelf={'flex-start'}
+    >
+      {heading}
+    </Heading>
+    <Text
+      fontSize={{ base: "18px", md: "24px" }}
+      color="#888888"
+      letterSpacing="-0.5px"
+      lineHeight="1.5em"
+      fontWeight="medium"
+       mb={'10px'}
+    >
+      {subline}
+    </Text>
+  </VStack>
+  <HStack gap="15px">
+    <GetStarted color="rgb(255, 212, 0)" bg="rgb(34, 34, 34)" />
+    <LearnMore bg="rgb(235, 235, 235)" color="black" />
+  </HStack>
+</Box>
+
       </Flex>
     </Flex>
   );

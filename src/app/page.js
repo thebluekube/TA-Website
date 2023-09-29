@@ -7,12 +7,13 @@ import SignUpToday from "@/components/SignUpToday";
 import Review from "@/components/ReviewSection";
 import TwoSidedGrid from "@/components/TwoSidedGrid";
 import { Market } from "@/components/Marketing-Section";
-
+import DoubleSidedGrid from "@/components/DoubleSidedGrid";
 export default function Home() {
   return (
     <>
       <Navbar />
       <HeroSection />
+      
       <TwoSidedGrid
         image="/laptop.jpg"
         imageSide="right"
@@ -30,6 +31,56 @@ export default function Home() {
         cta1="Get Started"
         cta2="Learn More"
       />
+     <DoubleSidedGrid
+  box1Props={{
+    image: <img src="/assignment.jpg" alt="Image 1"     
+    style={{
+      borderRadius: "20px",
+    }} 
+    />, 
+    heading: "Simplify Assignments",
+    subline: "Use our Teach Assist tool and effortlessly create engaging writing assignments",
+  }}
+  box2Props={{
+    image: (
+      <img
+        src="/exams.jpg"
+        alt="Image 1"
+        style={{
+          borderRadius: "20px",          
+        }}
+      />
+    ),    
+    heading: "Create Exams using Teach Assist",
+    subline: "Rapidly create multiple choice  examinations using simple prompts",
+  }}
+/>
+<DoubleSidedGrid
+  box1Props={{
+    image: <img src="/classroom.jpg" alt="Image 1"     
+    style={{
+      borderRadius: "20px",
+    }} 
+    />, 
+    heading: "Orchestrate Class Activities with Ease",
+    subline: "Morph your innovative ideas into exciting class activities instantly",
+  }}
+  box2Props={{
+    image: (
+      <img
+        src="/books.jpg"
+        alt="Image 1"
+        style={{
+          
+          borderRadius: "20px",          
+        }}
+      />
+    ),    
+    heading: "Streamline Student Evaluation Process",
+    subline: "Transform your grading criteria into efficient student evaluations",
+  }}
+/>
+
       <FastEasySection />
       <Review />
       <Market />
