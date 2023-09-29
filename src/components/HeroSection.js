@@ -15,29 +15,9 @@ import LearnMore from "./buttons/LearnMore";
 const HeroSection = () => {
   const [isMobile] = useMediaQuery("(max-width: 760px)", {
     ssr: true,
-    fallback: false, // return false on the server, and re-evaluate on the client side
+    fallback: false, 
   });
-  const buttonStyles = {
-    colorScheme: "white",
-    size: "lg",
-    variant: "solid",
-    color: "black",
-    bg: "white",
-  };
 
-  const headingFontSize = useBreakpointValue(
-    {
-      base: "32px",
-      md: "50px",
-      lg: "50px",
-    },
-    { fallback: "50px" }
-  );
-  const sublineFontSize = useBreakpointValue({
-    base: "18px",
-    md: "24px",
-    lg: "24px",
-  });
 
   return (
     <Flex
@@ -76,18 +56,9 @@ const HeroSection = () => {
         </Text>
       </Box>
       <Stack direction={"row"} spacing={4} align="center" marginTop="20px">
-        {/* <Button {...buttonStyles}>Get Started</Button> */}
         <GetStarted height="40px" fontSize="14px" />
         <LearnMore height="40px" fontSize="14px" />
-        {/* <Button
-          colorScheme="white"
-          size="lg"
-          variant="outline"
-          color="white"
-          bg="rgba(255, 255, 255, 0.25)"
-        >
-          Learn More
-        </Button> */}
+       
       </Stack>
     </Flex>
   );
