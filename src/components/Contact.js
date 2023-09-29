@@ -22,7 +22,7 @@ const ContactForm = () => {
       display={"flex"}
       flexDir={"column"}
       alignItems={"center"}
-      p={"100px 40px"}
+      p={{ base: "50px 20px", sm: "100px 40px" }}
       width={"100%"}
       gap={"60px"}
     >

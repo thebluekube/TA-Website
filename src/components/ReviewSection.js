@@ -8,7 +8,7 @@ const Review = () => {
       flexDir={"column"}
       alignItems={"center"}
       bg={"white"}
-      p={"100px 40px "}
+      p={{ base: "50px 20px", sm: "100px 40px" }}
       gap={"60px"}
     >
       <Heading

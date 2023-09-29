@@ -14,7 +14,7 @@ const FastEasySection = () => {
   return (
     <Box
       h={"min-content"}
-      p={"100px 0"}
+      p={{ base: "50px 0", sm: "100px 0" }}   
       display={"flex"}
       flexDirection={"column"}
       alignItems={"center"}
