@@ -6,7 +6,7 @@ const DoubleSidedGrid = ({ box1Props, box2Props }) => {
     <Flex
       flexDirection={{ base: "column", sm: "row" }} 
       bg="white"
-      padding={"100px 40px" } 
+      p={{ base: "50px 20px", sm: "100px 40px" }}
       alignItems="center"
       justifyContent="center"
       gap={'60px'}

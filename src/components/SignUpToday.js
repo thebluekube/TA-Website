@@ -10,7 +10,7 @@ const SignUpToday = () => {
       display={"flex"}
       alignItems={"center"}
       width={"100%"}
-      p={"100px 40px"}
+      p={{ base: "50px 20px", sm: "100px 40px" }}
     >
       <Flex
         direction={"column"}
