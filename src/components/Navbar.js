@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Box, Flex, Img, Link as ChakraLink } from "@chakra-ui/react";
+import { Box, Flex, Image, Link as ChakraLink } from "@chakra-ui/react";
 import SignUp from "./buttons/SignUp";
 
 const Navbar = () => {
@@ -13,10 +13,10 @@ const Navbar = () => {
         justifyContent={"space-between"}
         alignItems={"center"}
       >
-        <Box width={{ base: "150px", sm: "250px" }} >
-          <Img src="/Logo.png" />
+        <Box width={{ base: "150px", sm: "250px" }}>
+          <Image src="./Logo.png" alt="logo" />
         </Box>
-        <ChakraLink href="https://app.teachassist.ai/register">
+        <ChakraLink href="https://app.teachassist.ai/register" isExternal>
           <SignUp fontSize="14px" />
         </ChakraLink>
       </Flex>
