@@ -37,6 +37,7 @@ const FastEasySection = () => {
             height="240px"
             borderRadius={"20px"}
             src="./fast.jpg"
+            alt="fast lightning"
           />
         </Box>
         <Box
@@ -69,7 +70,7 @@ const FastEasySection = () => {
             lineHeight={"1.5em"}
             textAlign={"left"}
           >
-            You've never made a class related content this fast before.
+            You have never made a class related content this fast before.
           </Text>
           <ReadMore
             fontWeight="semibold"
@@ -96,6 +97,7 @@ const FastEasySection = () => {
             width="320px"
             height="240px"
             src="./easy.jpg"
+            alt="easy books"
           />
         </Box>
         <Box
@@ -128,7 +130,7 @@ const FastEasySection = () => {
             lineHeight={"1.5em"}
             textAlign={"left"}
           >
-            Works with standards and styles you're familiar with.
+            Works with standards and styles you are familiar with.
           </Text>
           <ReadMore
             fontWeight="semibold"
