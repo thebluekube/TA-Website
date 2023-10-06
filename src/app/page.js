@@ -8,6 +8,7 @@ import Review from "@/components/ReviewSection";
 import TwoSidedGrid from "@/components/TwoSidedGrid";
 import { Market } from "@/components/Marketing-Section";
 import DoubleSidedGrid from "@/components/DoubleSidedGrid";
+import { Image } from "@chakra-ui/react";
 export default function Home() {
   return (
     <>
@@ -33,7 +34,7 @@ export default function Home() {
       />
      <DoubleSidedGrid
   box1Props={{
-    image: <img src="/assignment.jpg" alt="Image 1"     
+    image: <Image src="/assignment.jpg" alt="Image 1"     
     style={{
       borderRadius: "20px",
     }} 
@@ -43,9 +44,9 @@ export default function Home() {
   }}
   box2Props={{
     image: (
-      <img
+      <Image
         src="/exams.jpg"
-        alt="Image 1"
+        alt="Image 2"
         style={{
           borderRadius: "20px",          
         }}
@@ -57,7 +58,7 @@ export default function Home() {
 />
 <DoubleSidedGrid
   box1Props={{
-    image: <img src="/classroom.jpg" alt="Image 1"     
+    image: <Image src="/classroom.jpg" alt="Image 3"     
     style={{
       borderRadius: "20px",
     }} 
@@ -67,9 +68,9 @@ export default function Home() {
   }}
   box2Props={{
     image: (
-      <img
+      <Image
         src="/books.jpg"
-        alt="Image 1"
+        alt="Image 4"
         style={{
           
           borderRadius: "20px",          

@@ -45,6 +45,7 @@ const Review = () => {
               height={"50px"}
               borderRadius={"50%"}
               src="./Adeola.jpg"
+              alt="profile picture"
             />
           </Box>
           <Box display={"flex"} flexDir={"column"}>
