@@ -14,7 +14,7 @@ const Navbar = () => {
         alignItems={"center"}
       >
         <Box width={{ base: "150px", sm: "250px" }}>
-          <Image src="./Logo.png" alt="logo" />
+          <Image src="./logo1.jpg" alt="logo" />
         </Box>
         <ChakraLink href="https://app.teachassist.ai/register" isExternal>
           <SignUp fontSize="14px" />
