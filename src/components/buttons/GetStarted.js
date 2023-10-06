@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "@chakra-ui/react";
+import { Button, Link } from "@chakra-ui/react";
 
 const GetStarted = (props) => {
   const buttonStyles = {
@@ -11,9 +11,11 @@ const GetStarted = (props) => {
   };
 
   return (
-    <Button {...buttonStyles} {...props}>
-      Get Started
-    </Button>
+    <Link href="https://app.teachassist.ai/register" isExternal>
+      <Button {...buttonStyles} {...props}>
+        Get Started
+      </Button>
+    </Link>
   );
 };
 
