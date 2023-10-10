@@ -13,7 +13,7 @@ const Navbar = () => {
         justifyContent={"space-between"}
         alignItems={"center"}
       >
-        <Box width={{ base: "150px", sm: "250px" }}>
+        <Box width={{ base: "130px", sm: "250px" }}>
           <Image src="./logo1.jpg" alt="logo" />
         </Box>
         <ChakraLink href="https://app.teachassist.ai/register" isExternal>
